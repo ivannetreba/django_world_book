@@ -1,0 +1,12 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <tаblе>
+        {{ form.as_table }}
+    </tаblе>
+    <input type="submit" vаluе="Сохранить" />
+</form>
+
+{% endblock %}
